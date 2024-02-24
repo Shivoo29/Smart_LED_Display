@@ -17,7 +17,7 @@ The Smart LED Display Project aims to create a large P10 LED display that provid
 
 2. **Clone the Repository**: Clone the forked repository to your local machine using the following command in your terminal:
     ```sh
-    git clone https://github.com/your-username/repository-name.git
+    git clone https://github.com/Shivoo29/Smart_LED_Display
     ```
 
 3. **Create a New Branch**: Navigate to the repository directory on your local machine and create a new branch to work on your contribution:
