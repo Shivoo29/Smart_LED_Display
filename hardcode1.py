@@ -56,3 +56,7 @@ aqi_category = calculate_aqi_category(aqi)
 print("Estimated PM2.5 level:", pm25_concentration)
 print("Estimated AQI:", aqi)
 print("AQI Category:", aqi_category)
+
+
+
+'''this code was written to just apply the proof of concept and to check tha the aip key is working or not'''

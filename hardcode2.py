@@ -55,3 +55,6 @@ aqi_category = calculate_aqi_category(aqi)
 print("Estimated PM2.5 level:", pm25_concentration)
 print("Estimated AQI:", aqi)
 print("AQI Category:", aqi_category)
+
+
+'''this code is also written because i was building the logic that how will i sshow the levels of aqi and mp 2.5'''
