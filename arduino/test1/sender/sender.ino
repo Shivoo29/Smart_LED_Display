@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>
 
 // WiFi credentials
-const char* ssid = "your_wifi_ssid"; // Replace "your_wifi_ssid" with your WiFi SSID
-const char* password = "your_wifi_password"; // Replace "your_wifi_password" with your WiFi password
+const char* ssid = "MAYANK 2238"; // Replace "your_wifi_ssid" with your WiFi SSID
+const char* password = "01234567"; // Replace "your_wifi_password" with your WiFi password
 
 // OpenWeatherMap API key and location coordinates
 const char* API_KEY = "16c61fdf9aa60dd3041f86e41fc7733b"; // Your OpenWeatherMap API key
