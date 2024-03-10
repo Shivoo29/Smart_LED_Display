@@ -33,15 +33,29 @@ void setup() {
 
   // Clear the display
   clearDisplay();
+
+  // Print "Hello, World!" on the display
+  printText("Hello, World!");
 }
 
 void loop() {
-  // Write your code to control the P10 LED display here
+  // Nothing to do here since we are printing static text in setup()
 }
 
 void clearDisplay() {
   digitalWrite(CS_PIN, LOW);  // Select the display
   SPI.transfer(0x42);  // Start of transmission command
   SPI.transfer(0x00);  // Clear the display command
+  digitalWrite(CS_PIN, HIGH);  // Deselect the display
+}
+
+void printText(String text) {
+  digitalWrite(CS_PIN, LOW);  // Select the display
+  SPI.transfer(0x44);  // Start of data command
+
+  for (int i = 0; i < text.length(); i++) {
+    SPI.transfer(text[i]);
+  }
+
   digitalWrite(CS_PIN, HIGH);  // Deselect the display
 }
