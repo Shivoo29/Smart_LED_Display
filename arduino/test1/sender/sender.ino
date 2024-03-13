@@ -49,6 +49,12 @@ void loop() {
           Serial.println(aqi);
           Serial.print("AQI Category: ");
           Serial.println(aqiCategory);
+
+          // Send data over serial port
+          Serial.print("AQI Level: ");
+          Serial.print(aqi);
+          Serial.print(", PM2.5 Level: ");
+          Serial.println(pm25);
         }
       }
     } else {
@@ -58,6 +64,7 @@ void loop() {
   }
   delay(30000); // Wait for 30 seconds before next request
 }
+
 
 /**
  * @brief Extracts the PM2.5 concentration from the weather data.
